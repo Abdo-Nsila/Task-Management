@@ -1,0 +1,354 @@
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/violet.css';
+
+.main-card {
+    position: relative;
+    height: 100%;
+    min-width: 1340px;
+    background-image: url('../../Assets/bg-mars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.effect {
+    background-color: rgba(0, 0, 0, 0.217);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.no-project {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.project-info {
+    background-color: rgba(0, 0, 0, 0.217);
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+
+.project-container {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgb(29, 29, 29);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.project-container h1 {
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+
+
+
+.card {
+    background-color: #101204;
+    height: max-content;
+    max-height: 90%;
+    width: 300px;
+    margin: 70px 0 0 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.select-card {
+    color: '#f22';
+    background-color: "#333";
+    margin: "0 5px";
+    padding: "5px";
+    border-radius: "10px";
+}
+
+.header-tasks {
+    /* background-color: aquamarine; */
+    height: 50px;
+    width: 90%;
+}
+
+.header-tasks h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(185, 185, 192);
+}
+
+/*! Container task */
+.ScrollAreaRoot .tasks {
+    width: 100% !important;
+    height: 50px !important;
+    margin-top: 10px;
+    background-color: rgb(55, 55, 55);
+}
+
+
+
+.task {
+    position: relative;
+    height: max-content;
+    width: 100%;
+    background-color: #22272B;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 15px 0 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: start;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.task .task-image {
+    width: 95%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.task .niveau {
+    width: 25%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.task p {
+    color: rgb(185, 185, 192);
+}
+
+
+.add-tasks {
+    min-height: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add-tasks:hover {
+    cursor: pointer;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+}
+
+
+.add-tasks span {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(185, 185, 192);
+}
+
+
+.actions{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    right: 10px;
+    bottom: 5px;
+}
+.action{
+    cursor: pointer;
+}
+
+
+
+
+
+.form-card {
+    background-color: rgb(26, 25, 25);
+    z-index: 10;
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgba(128, 128, 128, 0.372);
+}
+
+.form-card h1 {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-task {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.form-group {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(168, 168, 168);
+}
+
+.form-group input {
+    background-color: transparent;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    outline: none;
+    color: white;
+    text-indent: 20px;
+}
+
+.group-image{
+    width:80%;
+    /* border:2px solid rgba(128, 128, 128, 0.372); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.group-image .form-group{
+    width: 70%;
+}
+.group-image input{
+    width: 100%;
+}
+
+
+.form-group input:focus {
+    border: 2px solid rgb(112, 112, 255);
+}
+
+.form-group:last-child {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group button {
+    cursor: pointer;
+    height: 50px;
+    width: 40%;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+}
+
+.form-group button:first-child {
+    background-color: rgb(71, 71, 71);
+}
+
+.form-group button:last-child {
+    background-color: rgb(89, 89, 255);
+}
+
+.form-group button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+.ScrollAreaRoot {
+    /* background-color: rgb(55, 55, 55); */
+    height: max-content;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* -------------------------------------------- */
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px var(--black-a7);
+    --scrollbar-size: 10px;
+}
+
+.ScrollAreaViewport {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.ScrollAreaScrollbar {
+    display: flex;
+    /* ensures no selection */
+    user-select: none;
+    /* disable browser handling of all panning and zooming gestures on touch devices */
+    touch-action: none;
+    padding: 1px;
+    background: var(--black-a6);
+    transition: background 160ms ease-out;
+}
+
+.ScrollAreaScrollbar:hover {
+    background: var(--black-a8);
+}
+
+.ScrollAreaScrollbar[data-orientation='vertical'] {
+    /* width: var(--scrollbar-size); */
+    width: 5px;
+}
+
+.ScrollAreaThumb {
+    flex: 1;
+    background: var(--mauve-10);
+    border-radius: var(--scrollbar-size);
+    position: relative;
+}
+
+/* increase target size for touch devices https://www.w3.org/WAI/WCAG21/Understanding/target-size.html */
+.ScrollAreaThumb::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.ScrollAreaCorner {
+    background: var(--black-a8);
+}

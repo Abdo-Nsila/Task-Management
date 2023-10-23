@@ -1,0 +1,162 @@
+aside {
+    position: relative;
+    height: 100%;
+    min-width: 260px !important;
+    background-color: #151A1E;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.557);
+    border-right: 1px solid rgba(66, 66, 66, 0.557);
+
+}
+
+.espace {
+    height: 20%;
+    width: 100%;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.557);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-menu {
+    height: 80%;
+    width: 100%;
+}
+
+.project-menu .add-project {
+    height: 7%;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(160, 160, 170);
+}
+
+.project-menu .add-project span {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.project-menu .add-project span:hover {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(50, 50, 54, 0.736);
+    cursor: pointer;
+}
+
+
+
+.myproject {
+    height: 93%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.myproject a:focus{
+    background-color: rgba(50, 50, 54, 0.736);
+}
+
+.myproject .box-project {
+    height: 10%;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all .1s;
+}
+
+.myproject .box-project:hover {
+    background-color: #ffffff1b;
+}
+
+.form-project {
+    background-color: rgb(26, 25, 25);
+    z-index: 10;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgba(128, 128, 128, 0.372);;
+}
+.form-project h1{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-prj{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.form-group {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(168, 168, 168);
+}
+
+.form-group input {
+    background-color: transparent;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    outline: none;
+    color: white;
+    text-indent: 20px;
+}
+
+.form-group input:focus {
+    border: 2px solid rgb(112, 112, 255);
+}
+.form-group:last-child{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group button {
+    cursor: pointer;
+    height: 50px;
+    width: 40%;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+}
+.form-group button:first-child{
+    background-color: rgb(71, 71, 71);
+}
+.form-group button:last-child{
+    background-color: rgb(89, 89, 255);
+}
+.form-group button:hover{
+    opacity: 0.9;
+}
+
